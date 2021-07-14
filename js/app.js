@@ -1,30 +1,32 @@
 'use strict'
 // guesing game about me
 
-let userAnswer = prompt('Do you love to fly ?')
-
+let userAnswerOrig = prompt('Do you love to fly ?')
+let userAnswer = userAnswerOrig.toLowerCase();
 if (userAnswer=== 'yes'){
   alert('Thats the correct answer , move on to level 2!')
 }else{
 alert('you have 4 more chances!')
 };
 
-let userAnswerB = prompt('Do you love music?')
-
+let userAnswerBOrig = prompt('Do you love music?')
+let userAnswerB = userAnswerBOrig.toLowerCase();
 if (userAnswerB=== 'yes'){
   alert('Thats the correct answer , move on to the next level!')
 }else{
 alert('you have 3 more chances!')
 };
 
-let userAnswerC = prompt('Do you love videgames?')
+let userAnswerCOrig = prompt('Do you love videgames?')
+let userAnswerC = userAnswerCOrig.toLowerCase();
 if (userAnswerC=== 'yes'){
   alert('Thats the correct answer , move on to the next level!')
 }else{
 alert('you have 2 more chances!')
 };
 
-let userAnswerD = prompt('Do you love the gym?')
+let userAnswerDOrig = prompt('Do you love the gym?')
+let userAnswerD = userAnswerDOrig.toLowerCase();
 if (userAnswerD === 'no'){
   alert('Thats the correct answer , lets see the results!')
 }else{
