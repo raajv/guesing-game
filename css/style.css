@@ -1,0 +1,47 @@
+body{
+  background-color: rgb(27, 72, 102);
+  max-width:900px;
+  margin: 0 auto;
+  color:azure;
+}
+h1, footer{
+  border: 3px solid black;
+  text-align: center;
+  font-size: x-large;
+  margin:10px;
+  padding:10px;
+}
+h2{
+  font-size: large;
+}
+h3{
+  font-size: medium;
+  text-align: center;
+}
+a{
+  text-decoration:none;
+  color:inherit;
+}
+a:hover{
+  color:burlywood;
+}
+li{
+  display: inline;
+  padding: 1px;
+  margin: 10px;
+  border:1px solid;
+  background-color:rgb(130, 137, 233);
+}
+nav{
+  text-align: center;
+  }
+  section{
+    border:5px solid rgb(49, 46, 228);
+    text-align: center; 
+    margin:20px;
+}
+img{
+  
+  width:400px;
+  
+}
