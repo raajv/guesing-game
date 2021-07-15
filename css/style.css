@@ -25,7 +25,7 @@ a{
 a:hover{
   color:burlywood;
 }
-li{
+.navbar{
   display: inline;
   padding: 1px;
   margin: 10px;
@@ -43,5 +43,15 @@ nav{
 img{
   
   width:400px;
-  
+}
+ul{
+  list-style-type: circle;
+  list-style-position: inside;
+}
+ol{
+  list-style-type: lower-roman;
+  list-style-position: inside;
+}
+button{
+  background-color:rgb(130, 137, 233);
 }
