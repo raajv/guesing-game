@@ -1,32 +1,45 @@
 'use strict'
 // guesing game about me
+
 let count = 0;
-let userAnswerOrig = prompt('Do you love to fly ?');
-let userAnswer = userAnswerOrig.toLowerCase();
-if (userAnswer=== 'yes'){
-  alert('Thats the correct answer , move on to level 2!')
-count++ ;
-}else{
-alert('its ofcourse yes for me!')
-};
 
-let userAnswerBOrig = prompt('Do you love music?')
-let userAnswerB = userAnswerBOrig.toLowerCase();
-if (userAnswerB=== 'yes'){
-  alert('Thats the correct answer , move on to the next level!')
-}else{
-alert(' I love rock n roll!')
-};
+function aboutMe() {
+  let userAnswerOrig = prompt('Do you love to fly ?');
+  let userAnswer = userAnswerOrig.toLowerCase();
+  if (userAnswer=== 'yes'){
+    alert('Thats the correct answer , move on to level 2!')
+    count++ ;
+  }else{
+    alert('its ofcourse yes for me!');
+  }
+}
 
-let userAnswerCOrig = prompt('Do you love videgames?')
+aboutMe();
+
+function aboutMe1(){
+  let userAnswerBOrig = prompt('Do you love music?')
+  let userAnswerB = userAnswerBOrig.toLowerCase();
+  if (userAnswerB=== 'yes'){
+    alert('Thats the correct answer , move on to the next level!')
+  }else{
+    alert(' I love rock n roll!');
+  }
+}
+aboutMe1();
+
+function aboutMe2(){
+let userAnswerCOrig = prompt('Do you love videgames?');
 let userAnswerC = userAnswerCOrig.toLowerCase();
 if (userAnswerC=== 'yes'){
   alert('Thats the correct answer , move on to the next level!')
   count++;
 }else{
 alert('there is only one correct answer yes!')
-};
+}
+}
+aboutMe2();
 
+function aboutMe3(){
 let userAnswerDOrig = prompt('Do you love the gym?')
 let userAnswerD = userAnswerDOrig.toLowerCase();
 if (userAnswerD === 'no'){
@@ -34,33 +47,41 @@ if (userAnswerD === 'no'){
   count++;
 }else{
 alert('ALMOST GAME OVER')
-};
+}
+}
+aboutMe3();
+
+function aboutMe4(){
 let userAnswerEOrig = prompt('do you love star wars?')
 let userAnswerE = userAnswerEOrig.toLowerCase();
 if (userAnswerE === 'yes'){
   alert('Thats the correct answer , lets see the results!')
   count++;
 }else{
-alert('GAME OVER, not the correct answer')
-};
+alert('GAME OVER, not the correct answer');
+}
+}
+aboutMe4();
 
-let userName = prompt ('Please Enter Your Name')
-alert('Hi ' + userName + ' thanks for visiting my page ! ' + 'Your Answers are - ' +  ' Do you love to fly ?'
-+ userAnswer + ' Do you love music? ' + userAnswerB + ' Do you love videgames? ' + userAnswerC + ' Do you love the gym? '
-+ userAnswerD + ' do you love star wars? ' + userAnswerE)
+
+// let userName = prompt ('Please Enter Your Name')
+// alert('Hi ' + userName + ' thanks for visiting my page ! ' + 'Your Answers are - ' +  ' Do you love to fly ?'
+// + userAnswer + ' Do you love music? ' + userAnswerB + ' Do you love videgames? ' + userAnswerC + ' Do you love the gym? '
+// + userAnswerD + ' do you love star wars? ' + userAnswerE)
 
 // guessing number game
 // give the user a number to guess between 1 and 100
 
+function randomNum(){
 let correctAnswer = Math.floor(Math.random() * 100);
 console.log(correctAnswer);
 let numberOfAttempts = 4;
-let letters = /^[A-Za-z]+$/;
+// let letters = /^[A-Za-z]+$/;
 
 for (let i=0 ; i<numberOfAttempts ; i++){
   let userInput = prompt('Enter a number between 1-100');
 
-  if(userInput < 1 || userInput > 100 || userInput == letters){
+  if(userInput < 1 || userInput > 100 ){
     alert('I say again , Enter a number between 1-100');
   }else if(userInput == correctAnswer){
     alert('You got it right!');
@@ -74,9 +95,12 @@ for (let i=0 ; i<numberOfAttempts ; i++){
   }
 }
 alert('the correct answer is ' + correctAnswer);
+}
+randomNum();
 
 // array game guess my favourite sport
 
+function array1(){
 let arrayFavSport = ['football' , 'basketball' , 'cricket' , 'tennis' , 'chess' , 'baseball'];
 
 let numberOfGuesses = 5;
@@ -106,6 +130,9 @@ if (!correctSport && numberOfGuesses === 1) {
 }
 numberOfGuesses--; // change that will break the loop
 }
+}
 
-let finalTotal = prompt('your final score is ' + count);
+array1();
+
+alert('your final score is ' + count);
 
