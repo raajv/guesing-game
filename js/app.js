@@ -1,11 +1,11 @@
 'use strict'
 // guesing game about me
-let rushab = false;
+let count = 0;
 let userAnswerOrig = prompt('Do you love to fly ?');
 let userAnswer = userAnswerOrig.toLowerCase();
 if (userAnswer=== 'yes'){
   alert('Thats the correct answer , move on to level 2!')
-  rushab = true;
+count++ ;
 }else{
 alert('its ofcourse yes for me!')
 };
@@ -22,6 +22,7 @@ let userAnswerCOrig = prompt('Do you love videgames?')
 let userAnswerC = userAnswerCOrig.toLowerCase();
 if (userAnswerC=== 'yes'){
   alert('Thats the correct answer , move on to the next level!')
+  count++;
 }else{
 alert('there is only one correct answer yes!')
 };
@@ -30,6 +31,7 @@ let userAnswerDOrig = prompt('Do you love the gym?')
 let userAnswerD = userAnswerDOrig.toLowerCase();
 if (userAnswerD === 'no'){
   alert('Thats the correct answer , lets see the results!')
+  count++;
 }else{
 alert('ALMOST GAME OVER')
 };
@@ -37,6 +39,7 @@ let userAnswerEOrig = prompt('do you love star wars?')
 let userAnswerE = userAnswerEOrig.toLowerCase();
 if (userAnswerE === 'yes'){
   alert('Thats the correct answer , lets see the results!')
+  count++;
 }else{
 alert('GAME OVER, not the correct answer')
 };
@@ -61,6 +64,7 @@ for (let i=0 ; i<numberOfAttempts ; i++){
     alert('I say again , Enter a number between 1-100');
   }else if(userInput == correctAnswer){
     alert('You got it right!');
+    count++;
    break;
   }else if(userInput>correctAnswer){
       alert('you are too high ,go low');
@@ -90,6 +94,7 @@ for (let j=0 ; j<arrayFavSport.length ; j++){
 }
 if (correctSport) {
   alert('Great job, here is a list of the other choices ' + arrayFavSport);
+  count++;
 } 
 // if they got it wrong and they are on 5-2 we will tell them to try again
 if (!correctSport && numberOfGuesses <= 5 && numberOfGuesses > 1) {
@@ -101,4 +106,6 @@ if (!correctSport && numberOfGuesses === 1) {
 }
 numberOfGuesses--; // change that will break the loop
 }
+
+let finalTotal = prompt('your final score is ' + count);
 
